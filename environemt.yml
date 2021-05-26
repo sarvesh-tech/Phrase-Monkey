@@ -1,5 +1,6 @@
 name: phrasemonkey
 channels:
+  - anaconda
   - defaults
 dependencies:
   - argon2-cffi=20.1.0=py39h2bbff1b_1
@@ -7,13 +8,14 @@ dependencies:
   - attrs=21.2.0=pyhd3eb1b0_0
   - backcall=0.2.0=pyhd3eb1b0_0
   - bleach=3.3.0=pyhd3eb1b0_0
-  - ca-certificates=2021.4.13=haa95532_1
+  - ca-certificates=2020.10.14=0
   - certifi=2020.12.5=py39haa95532_0
   - cffi=1.14.5=py39hcd4344a_0
   - colorama=0.4.4=pyhd3eb1b0_0
   - decorator=5.0.9=pyhd3eb1b0_0
   - defusedxml=0.7.1=pyhd3eb1b0_0
   - entrypoints=0.3=py39haa95532_0
+  - flask=1.1.2=py_0
   - icu=58.2=ha925a31_3
   - importlib-metadata=3.10.0=py39haa95532_0
   - importlib_metadata=3.10.0=hd3eb1b0_0
@@ -21,8 +23,9 @@ dependencies:
   - ipython=7.22.0=py39hd4e2768_0
   - ipython_genutils=0.2.0=pyhd3eb1b0_1
   - ipywidgets=7.6.3=pyhd3eb1b0_1
+  - itsdangerous=1.1.0=py_0
   - jedi=0.17.2=py39haa95532_1
-  - jinja2=3.0.0=pyhd3eb1b0_0
+  - jinja2=2.11.2=py_0
   - jpeg=9b=hb83a4c4_2
   - jsonschema=3.2.0=py_2
   - jupyter=1.0.0=py39haa95532_7
@@ -82,6 +85,7 @@ dependencies:
   - vs2015_runtime=14.27.29016=h5e58377_2
   - wcwidth=0.2.5=py_0
   - webencodings=0.5.1=py39haa95532_1
+  - werkzeug=1.0.1=py_0
   - wheel=0.36.2=pyhd3eb1b0_0
   - widgetsnbextension=3.5.1=py39haa95532_0
   - wincertstore=0.2=py39h2bbff1b_0
@@ -109,4 +113,5 @@ dependencies:
     - transformers==4.6.1
     - typing-extensions==3.10.0.0
     - urllib3==1.26.4
+    - wtforms==2.3.3
 prefix: C:\Users\hasit\anaconda3\envs\phrasemonkey
