@@ -1,0 +1,96 @@
+body{
+    background-color: #F7F5E8;
+}
+.css-input1 {
+     padding: 20px;
+     border-width: 0px;
+     border-color: #ffffff;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 15px 0px 0px 15px;
+     box-shadow: 0px 0px 30px rgba(66,66,66,.10);
+     text-shadow: 0px 0px 0px rgba(66,66,66,.0);
+     font-family: 'Helvetica Neue', sans-serif;
+     font-size: 14px;
+     width: 347px;
+     height: 205px;
+}
+.css-input2 {
+    padding: 20px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 30px rgba(66,66,66,.10);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.0);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    width: 347px;
+    height: 205px;
+}
+h1 { color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center; 
+}
+
+.myButton {
+	background-color:#3F9FC0;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    /* identical to box height, or 39px */
+    letter-spacing: -0.005em;
+    text-align: center; 
+	padding:12px 14px;
+	text-decoration:none;
+
+}
+.myButton:hover {
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 360px;
+    height: 368px;
+    left: -141px;
+    top: -135px;
+
+    border: 55px solid rgba(0, 154, 241, 0.36);
+    box-sizing: border-box;
+    z-index: -1;
+}
+.dot1 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 360px;
+    height: 368px;
+    left: 641px;
+    top: 135px;
+    border: 55px solid rgba(255, 214, 0, 0.43);
+    box-sizing: border-box;
+    z-index: -1;
+}
