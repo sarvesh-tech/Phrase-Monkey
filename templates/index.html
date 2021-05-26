@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Document</title>
 </head>
-<body> 
     <span class="dot"></span>
     <span class="dot1"></span>
     <h1>Put your text in ✨disguise✨</h1>
-    <input type="text" class="css-input1" />
-    <input type="text" class="css-input2" />
+    <form method="POST">
+        <input type="text" class="css-input1" name="user-input"/>
+        <input type="submit" class="myButton" value="Rephrase">
+    </form>
+    <input type="text" class="css-input2" name="output" id="output" value={{output}} />
     <a href="#" class="myButton">Rephrase</a>
 </body>
 </html>
