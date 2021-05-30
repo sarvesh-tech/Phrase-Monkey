@@ -11,11 +11,11 @@
     <span class="dot1"></span>
     <h1>Put your text in ✨disguise✨</h1>
     <div id="parent">
-        <form method="POST" id="text_form">
-            <input type="text" class="css-input1" id="user-text" name="user-input">
-            <input type="text" class="css-input2" id="rephrased" value={{output}}>
+        <form method="POST" id="text_form" action="{{ url_for('submit') }}">
+            <textarea rows = "5" cols = "60" name="user-input" class="css-input1">{{input}}</textarea>
+            <textarea rows = "5" cols = "60" class="css-input2">{{output}}</textarea>
             <div style="margin-right: 682px; margin-top: 7px;">
-              <input type="submit" class="myButton" value="Rephrase">
+                <input type="submit" class="myButton" value="Rephrase" style="border:none;">
             </div>
         </form>
     </div>

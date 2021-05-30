@@ -107,3 +107,11 @@ span { display: block; margin: 0 0 3px; font-size: 1.2em; font-weight: bold; }
    text-align: center;
    vertical-align: middle;
 }
+
+textarea {
+  resize: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

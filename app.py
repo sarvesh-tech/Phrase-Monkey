@@ -10,12 +10,12 @@ def index():
 
 
 # updates second text field with processed input from text field 1 on submit button
-@app.route('/', methods=['POST', 'GET'])
-def get_user_input():
+@app.route('/submit', methods=['POST', 'GET'])
+def submit():
     text = request.form["user-input"]
     # this should be where text becomes rephrased
     processed_text = text.upper()
-    return render_template('index.html', output=processed_text)
+    return render_template('index.html', output=processed_text, input=text)
 
 
 # only for testing purposes, we will need to delete before deployment
