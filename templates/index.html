@@ -10,11 +10,15 @@
     <span class="dot"></span>
     <span class="dot1"></span>
     <h1>Put your text in ✨disguise✨</h1>
-    <form method="POST">
-        <input type="text" class="css-input1" name="user-input"/>
-        <input type="submit" class="myButton" value="Rephrase">
-    </form>
-    <input type="text" class="css-input2" value={{output}}>
-    <a href="#" class="myButton">Rephrase</a>
+    <div id="parent">
+        <form method="POST" id="text_form">
+            <input type="text" class="css-input1" id="user-text" name="user-input">
+            <input type="text" class="css-input2" id="rephrased" value={{output}}>
+            <div style="margin-right: 682px; margin-top: 7px;">
+              <input type="submit" class="myButton" value="Rephrase">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>

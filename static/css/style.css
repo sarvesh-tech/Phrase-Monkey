@@ -94,3 +94,16 @@ h1 { color: #111;
     box-sizing: border-box;
     z-index: -1;
 }
+
+label { width: 367px; float: left; margin: 0 20px 0 0; }
+span { display: block; margin: 0 0 3px; font-size: 1.2em; font-weight: bold; }
+
+#parent {
+   display: table;
+   width: 100%;
+}
+#text_form {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
