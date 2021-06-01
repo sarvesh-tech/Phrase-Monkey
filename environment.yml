@@ -9,10 +9,14 @@ dependencies:
   - flask=1.1.2
   - itsdangerous=1.1.0
   - jinja2=2.11.2
+  - libcxx=10.0.0
+  - libffi=3.3
   - markupsafe=1.1.1
+  - ncurses=6.2
   - openssl=1.1.1k
   - pip=21.1.1
   - python=3.8.10
+  - readline=8.1
   - setuptools=52.0.0
   - sqlite=3.35.4
   - tk=8.6.10
@@ -20,10 +24,4 @@ dependencies:
   - wheel=0.36.2
   - xz=5.2.5
   - zlib=1.2.11
-  - pip:
-      - ncurses=6.2
-      - readline=8.1
-      - libcxx=10.0.0
-      - libffi=3.3
-
 prefix: /Users/sarvesh/opt/anaconda3/envs/phrasemonkey
