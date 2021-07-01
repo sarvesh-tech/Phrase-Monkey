@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhraseMonkey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a</li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+<center>
+<div class="section1">
+    <h1>Put your text in ✨disguise✨</h1>
+    <div id="parent">
+        <form method="POST" id="text_form" action="{{ url_for('submit') }}">
+            <textarea rows = "5" cols = "60" name="user-input" class="css-input1">{{input}}</textarea>
+            <textarea rows = "5" cols = "60" class="css-input2">{{output}} </textarea>
+            <div class="butt"</div>
+            <input type="submit" class="myButton" value="Rephrase">
+            </div>
+        </form>
+    </div>
+</center>
+</body>
+</html>
