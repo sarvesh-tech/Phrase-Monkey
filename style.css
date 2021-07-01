@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* CORE STYLES */
+:root {
+    --primary-color: rgba(13, 110, 139, 0);
+    --overlay-color: rgba(0, 0, 0, 0.9);
+    --menu-speed: .9s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+  }
+  
+  .showcase {
+    background: var(--primary-color);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* MENU STYLES */
+  .menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 30px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+  /* Show Menu */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  
+  
+  
+
+
+
+
+body {
+    background-color: #fff9c0;
+}
+.section1 {
+    padding: 50px;
+    padding-bottom: 90px;
+    background-color: #fff9c0;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    line-height: 100%;
+    /* identical to box height, or 66px */
+    letter-spacing: -0.03em;
+    font-size: 44px;
+    padding: 22px;
+}
+.css-input1 {
+    width: 500px;
+    height: 350px;
+    border-radius: 8px 8px 8px 8px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px;
+}
+.css-input2 {
+    width: 500px;
+    height: 350px;
+    border-radius: 8px 8px 8px 8px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px;
+}
+
+.myButton {
+    width: 1003px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(73, 73, 73);
+    border-radius: 15px;
+  }
+  
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* Add media queries A.K.A make it responsive */
+@media screen and (max-width:1180px) {
+    .myButton {
+        max-width: 900px;
+    }
+    .css-input1 {
+        max-width: 450px;
+    }
+    .css-input2 {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .myButton {
+        max-width: 805px;
+    }
+    .css-input1 {
+        max-width: 400px;
+    }
+    .css-input2 {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .myButton {
+        max-width: 705px;
+    }
+    .css-input1 {
+        max-width: 350px;
+    }
+    .css-input2 {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width:880px) {
+    .myButton {
+        max-width: 605px;
+    }
+    .css-input1 {
+        max-width: 300px;
+    }
+    .css-input2 {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width:780px) {
+    .myButton {
+        max-width: 505px;
+    }
+    .css-input1 {
+        max-width: 250px;
+    }
+    .css-input2 {
+        max-width: 250px;
+    }
+    h1 {
+      font-size: 37px;
+  }
+}
+@media screen and (max-width:680px) {
+    .myButton {
+        max-width: 405px;
+    }
+    .css-input1 {
+        max-width: 200px;
+    }
+    .css-input2 {
+        max-width: 200px;
+    }
+    h1 {
+      font-size: 30px;
+  }
+}
+@media screen and (max-width:580px) {
+    .myButton {
+        max-width: 305px;
+    }
+    .css-input1 {
+        max-width: 150px;
+    }
+    .css-input2 {
+        max-width: 150px;
+    }
+    h1 {
+      font-size: 35px;
+  }
+}
+@media screen and (max-width:480px) {
+    .myButton {
+        max-width: 205px;
+    }
+    .css-input1 {
+        max-width: 100px;
+    }
+    .css-input2 {
+        max-width: 100px;
+    }
+    h1 {
+      font-size: 29px;
+  }
+}
+@media screen and (max-width:380px) {
+    .myButton {
+        max-width: 80px;
+    }
+    .css-input1 {
+        max-width: 100px;
+    }
+    .css-input2 {
+        max-width: 100px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
