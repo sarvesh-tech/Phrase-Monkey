@@ -1,144 +1,310 @@
-body{
-    background-color: #F7F5E8;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* CORE STYLES */
+:root {
+    --primary-color: rgba(13, 110, 139, 0);
+    --overlay-color: rgba(0, 0, 0, 0.9);
+    --menu-speed: .9s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+  }
+  
+  .showcase {
+    background: var(--primary-color);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    position: relative;
+  }
+body {
+  background-image: url("eclipse4\ copy.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(3,12,45,255);    
+}
+
+.section1 {
+    padding: 90px;
+    margin-top: 70px;
+    padding-bottom: 90px;
+    z-index: -20;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    line-height: 100%;
+    /* identical to box height, or 66px */
+    letter-spacing: -0.03em;
+    font-size: 44px;
+    padding: 22px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 .css-input1 {
-     padding: 20px;
-     border-width: 0px;
-     border-color: #ffffff;
-     background-color: #FFFFFF;
-     color: #000000;
-     border-style: solid;
-     border-radius: 15px 0px 0px 15px;
-     box-shadow: 0px 0px 30px rgba(66,66,66,.10);
-     text-shadow: 0px 0px 0px rgba(66,66,66,.0);
-     font-family: 'Helvetica Neue', sans-serif;
-     font-size: 14px;
-     width: 347px;
-     height: 205px;
+    width: 500px;
+    height: 350px;
+    border-radius: 8px 8px 8px 8px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px;
 }
 .css-input2 {
-    padding: 20px;
-    border-width: 0px;
-    border-color: #ffffff;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-style: solid;
-    border-radius: 0px 15px 15px 0px;
-    box-shadow: 0px 0px 30px rgba(66,66,66,.10);
-    text-shadow: 0px 0px 0px rgba(66,66,66,.0);
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    width: 347px;
-    height: 205px;
-}
-h1 { color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 37px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center; 
+    width: 500px;
+    height: 350px;
+    border-radius: 8px 8px 8px 8px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 12px;
 }
 
 .myButton {
-	background-color:#3F9FC0;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 143%;
-    /* identical to box height, or 39px */
-    letter-spacing: -0.005em;
-    text-align: center; 
-	padding:12px 14px;
-	text-decoration:none;
-
-}
-.myButton:hover {
-	background-color:#408c99;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.dot {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    width: 360px;
-    height: 368px;
-    left: -141px;
-    top: -135px;
-
-    border: 55px solid rgba(0, 154, 241, 0.36);
-    box-sizing: border-box;
-    z-index: -1;
-}
-.dot1 {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    width: 360px;
-    height: 368px;
-    left: 1141px;
-    top: 135px;
-    border: 55px solid rgba(255, 214, 0, 0.43);
-    box-sizing: border-box;
-    z-index: -1;
+    width: 1003px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-label { width: 367px; float: left; margin: 0 20px 0 0; }
-span { display: block; margin: 0 0 3px; font-size: 1.2em; font-weight: bold; }
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(73, 73, 73);
+    border-radius: 15px;
+  }
+  
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* Add media queries A.K.A make it responsive */
+@media screen and (max-width:1180px) {
+    .myButton {
+        max-width: 900px;
+    }
+    .css-input1 {
+        max-width: 450px;
+    }
+    .css-input2 {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .myButton {
+        max-width: 805px;
+    }
+    .css-input1 {
+        max-width: 400px;
+    }
+    .css-input2 {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .myButton {
+        max-width: 705px;
+    }
+    .css-input1 {
+        max-width: 350px;
+    }
+    .css-input2 {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width:880px) {
+    .myButton {
+        max-width: 605px;
+    }
+    .css-input1 {
+        max-width: 300px;
+    }
+    .css-input2 {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width:780px) {
+    .myButton {
+        max-width: 505px;
+    }
+    .css-input1 {
+        max-width: 250px;
+    }
+    .css-input2 {
+        max-width: 250px;
+    }
+    h1 {
+      font-size: 37px;
+  }
+}
+@media screen and (max-width:680px) {
+    .myButton {
+        max-width: 405px;
+    }
+    .css-input1 {
+        max-width: 200px;
+    }
+    .css-input2 {
+        max-width: 200px;
+    }
+    h1 {
+      font-size: 30px;
+  }
+}
+@media screen and (max-width:580px) {
+    .myButton {
+        max-width: 305px;
+    }
+    .css-input1 {
+        max-width: 150px;
+    }
+    .css-input2 {
+        max-width: 150px;
+    }
+    h1 {
+      font-size: 35px;
+  }
+}
+@media screen and (max-width:480px) {
+    .myButton {
+        max-width: 205px;
+    }
+    .css-input1 {
+        max-width: 100px;
+    }
+    .css-input2 {
+        max-width: 100px;
+    }
+    h1 {
+      font-size: 29px;
+  }
+}
+@media screen and (max-width:380px) {
+    .myButton {
+        max-width: 80px;
+    }
+    .css-input1 {
+        max-width: 100px;
+    }
+    .css-input2 {
+        max-width: 100px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.05);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 25px;
+	height: 25px;
+  border-radius: 5px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+  border-radius: 5px;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 35px;
+	height: 35px;
+  border-radius: 5px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 20px;
+	height: 20px;
+  border-radius: 5px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+  border-radius: 5px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 30px;
+	height: 30px;
+  border-radius: 5px;
+	animation-delay: 3.5s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-1500px) rotate(360deg);
+
+	}
+}
 
 #parent {
-   display: table;
-   width: 100%;
+  z-index: 1000;
 }
-#text_form {
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-}
-
-textarea {
-  resize: none;
-}
-
-textarea:focus, input:focus{
-    outline: none;
-}
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
