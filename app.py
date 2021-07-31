@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import transformer
 
 app = Flask(__name__)
 
@@ -14,7 +15,7 @@ def index():
 def submit():
     text = request.form["user-input"]
     # this should be where text becomes rephrased
-    processed_text = text.upper()
+    processed_text = transformer.paraphrase_text(text)
     return render_template('index.html', output=processed_text, input=text)
 
 
