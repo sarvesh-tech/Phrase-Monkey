@@ -20,7 +20,7 @@
         <div id="parent">
             <form method="POST" id="text_form" action="{{ url_for('submit') }}">
                 <textarea rows = "5" cols = "60" name="user-input" class="css-input1">{{input}}</textarea>
-                <textarea rows = "5" cols = "60" class="css-input2" disabled>{{output}} </textarea>
+                <textarea rows = "5" cols = "60" class="css-input2" readonly>{{output}}</textarea>
                 <div class="butt"></div>
                 <input type="submit" class="myButton" value="Rephrase">
             </form>
