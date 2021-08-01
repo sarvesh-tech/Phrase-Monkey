@@ -233,6 +233,7 @@ textarea:focus, input:focus {
     }
 }
 
+
 .box-area li {
 	position: absolute;
 	display: block;
@@ -242,6 +243,7 @@ textarea:focus, input:focus {
 	background: rgba(255, 255, 255, 0.05);
 	animation: animate 20s linear infinite;
 	bottom: -150px;
+    position: fixed;
 }
 .box-area li:nth-child(1) {
 	left: 86%;
