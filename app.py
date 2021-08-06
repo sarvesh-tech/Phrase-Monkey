@@ -36,3 +36,8 @@ def contact():
 @app.route('/home')
 def home():
     return render_template('index.html')
+
+
+# only for testing purposes, we will need to delete before deployment
+if __name__ == "__main__":
+    app.run()
